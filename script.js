@@ -12,6 +12,7 @@ const numInput = document.querySelector('.main__number');
 
 //1) Draw a triangle
 function drawTriangle() {
+  figure.innerHTML = '';
   const rows = numInput.value;
   let string = '';
   for (let i = 0; i <= rows; i++) {
@@ -24,6 +25,7 @@ function drawTriangle() {
 }
 //2) Draw a Pyramid
 function drawPyramid() {
+  figure.innerHTML = '';
   const rows = numInput.value;
   let string = '';
   for (let i = 0; i <= rows; i++) {
@@ -40,6 +42,7 @@ function drawPyramid() {
 
 //3) Draw a reversed pyramid
 function drawReversedPyramid() {
+  figure.innerHTML = '';
   const rows = numInput.value;
   let string = '';
   for (let i = 0; i <= rows; i++) {
@@ -56,6 +59,7 @@ function drawReversedPyramid() {
 // 5) Draw diamond
 function drawDiamond() {
   const rows = numInput.value;
+  figure.innerHTML = '';
   let string = '';
   for (let i = 0; i <= rows; i++) {
     for (let j = rows; j > i; j--) {
